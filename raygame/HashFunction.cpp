@@ -10,7 +10,8 @@ namespace HashFunction
 		unsigned int hash = 0;
 
 		for (unsigned int i = 0; i < length; ++i)
-			hash += data[i];
+			hash += data[i];
+
 		return hash;
 	}
 
@@ -48,6 +49,14 @@ namespace HashFunction
 		for (unsigned int i = 0; i < length; i++)
 		{
 			hash = (998877 * (hash / 2189) - data[i]) / M_PI;
+			if (hash > 999999)
+			{
+				hash = hash - (length * hash);
+			}
+			if (data[i] + 5 >= 10)
+			{
+				hash = hash / 3;
+			}
 		}
 
 		return (hash & 0xFFFFFF);
