@@ -51,11 +51,11 @@ namespace HashFunction
 			hash = (998877 * (hash / 2189) - data[i]) / M_PI;
 			if (hash > 999999)
 			{
-				hash = hash - (length * hash);
+				hash = hash - (length * hash) + 420 / 69;
 			}
 			if (data[i] + 5 >= 10)
 			{
-				hash = hash / 3;
+				hash = (hash / 2) + 69;
 			}
 		}
 

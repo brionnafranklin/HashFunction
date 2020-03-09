@@ -26,6 +26,7 @@ int main()
 	SetTargetFPS(60);
 
 	unsigned int hashValue = HashFunction::briColorHash("Brionna Jolene Franklin", 23);
+	Color hashColor = { hashValue >> 16, hashValue >> 8, hashValue };
 
 	std::cout << std::hex << hashValue << std::endl;
 	//--------------------------------------------------------------------------------------
@@ -42,7 +43,7 @@ int main()
 		//----------------------------------------------------------------------------------
 		BeginDrawing();
 
-		ClearBackground(RAYWHITE);
+		ClearBackground(hashColor);
 
 
 		//DrawText(std::to_string(hashValue), 190, 200, 20, LIGHTGRAY);

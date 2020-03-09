@@ -16,6 +16,8 @@ namespace HashFunction
 	//Fun custom hash
 	unsigned int briColorHash(const char * data, unsigned int length);
 
-	// ADD YOUR FUNCTIONS HERE
-	// a helper to access a default hash function	static HashFunc defaultHash = badHash;
+	// ADD YOUR FUNCTIONS HERE
+
+	// a helper to access a default hash function
+	static HashFunc defaultHash = badHash;
 };
