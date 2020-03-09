@@ -10,6 +10,9 @@
 ********************************************************************************************/
 
 #include "raylib.h"
+#include "HashFunction.h"
+#include <iostream>
+#include <iomanip>
 
 int main()
 {
@@ -21,6 +24,10 @@ int main()
 	InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
 
 	SetTargetFPS(60);
+
+	unsigned int hashValue = HashFunction::briColorHash("Brionna Jolene Franklin", 23);
+
+	std::cout << std::hex << hashValue << std::endl;
 	//--------------------------------------------------------------------------------------
 
 	// Main game loop
@@ -37,7 +44,8 @@ int main()
 
 		ClearBackground(RAYWHITE);
 
-		DrawText("Congrats! You created your first window!", 190, 200, 20, LIGHTGRAY);
+
+		//DrawText(std::to_string(hashValue), 190, 200, 20, LIGHTGRAY);
 
 		EndDrawing();
 		//----------------------------------------------------------------------------------
