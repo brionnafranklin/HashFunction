@@ -19,4 +19,3 @@ namespace HashFunction
 	// ADD YOUR FUNCTIONS HERE
 	// a helper to access a default hash function	static HashFunc defaultHash = badHash;
 };
-
