@@ -66,7 +66,7 @@
                 Type: reeNode pointer
                 Visibility: private
                 
-**File**: TreeNode.h
+   **File**: TreeNode.h
 
         Description: A node to be placed in a binary tree
 
