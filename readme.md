@@ -129,96 +129,32 @@
                 
             Attributes:
                 
-                -Name: 
-                Description: 
-                Type: 
-                Visibility: 
+                -Name: m_value
+                Description: data this node stores
+                Type: int
+                Visibility: private
                 
-                -Name: 
-                Description: 
-                Type: 
-                Visibility: 
+                -Name: m_left
+                Description: this node's left child
+                Type: TreeNode pointer
+                Visibility: private
                 
-                -Name: 
-                Description: 
-                Type: 
-                Visibility: 
+                -Name: m_right
+                Description: this node's right child
+                Type: TreeNode pointer
+                Visibility: private
                 
-                -Name: 
-                Description: 
-                Type: 
-                Visibility: 
-                
-                -Name: 
-                Description: 
-                Type: 
-                Visibility: 
-                
-                -Name: 
-                Description: 
-                Type: 
-                Visibility: 
-                
-                -Name: 
-                Description: 
-                Type: 
-                Visibility: 
-                
-                -Name: 
-                Description: 
-                Type: 
-                Visibility: 
-                
-                -Name: 
-                Description: 
-                Type: 
-                Visibility: 
-                
-                -Name: 
-                Description: 
-                Type: 
-                Visibility: 
-                
-                -Name: 
-                Description: 
-                Type: 
-                Visibility: 
-                
-                -Name: 
-                Description: 
-                Type: 
-                Visibility: 
-                
-                -Name: 
-                Description: 
-                Type: 
-                Visibility: 
-                
-                -Name: 
-                Description: 
-                Type: 
-                Visibility: 
-                
-                -Name: 
-                Description: 
-                Type: 
-                Visibility: 
-                
-                -Name: 
-                Description: 
-                Type: 
-                Visibility: 
-                
-                -Name: 
-                Description: 
-                Type: 
-                Visibility: 
-                
-                -Name: 
-                Description: 
-                Type: 
-                Visibility: 
+      **File**: main.cpp
 
+        Description: runs on start up
+
+            Operations:
+                
+                -Name: main
+                Description: the only function in main.cpp; runs on start up
+                Type: int
+                Visibility: private
+                
 ## License
 
 MIT License - Copyright (c) 2018 Academy of Interactive Entertainment
