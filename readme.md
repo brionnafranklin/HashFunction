@@ -1,3 +1,23 @@
+| Brionna Franklin|
+| :---              |
+| s198017          |
+| Assessment 3 - TikTakToe|
+| TikTakToe Documentation |
+
+## I. Design
+
+1. Object Information
+
+    **File**: HashFunction.h
+
+        Description: 
+
+            Operations:
+
+                -Name: 
+                Description: 
+                Type: 
+                Visibility: 
 
 ## License
 
