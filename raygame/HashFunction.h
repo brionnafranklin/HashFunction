@@ -3,6 +3,7 @@
 //generates a random id number consistly based on input
 namespace HashFunction
 {
+	//default hash function
 	typedef std::function< unsigned int(const char*, unsigned int)> HashFunc;
 
 	// implementation of a basic addition hash
