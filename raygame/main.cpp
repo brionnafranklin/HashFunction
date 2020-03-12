@@ -21,11 +21,14 @@ int main()
 	int screenWidth = 800;
 	int screenHeight = 450;
 
+	//create window
 	InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
 
 	SetTargetFPS(60);
 
+	//create color value using hash
 	unsigned int hashValue = HashFunction::briColorHash("Brionna Jolene Franklin", 23);
+	//create color bassed off value
 	Color hashColor = { hashValue >> 16, hashValue >> 8, hashValue };
 
 	std::cout << std::hex << hashValue << std::endl;
@@ -43,6 +46,7 @@ int main()
 		//----------------------------------------------------------------------------------
 		BeginDrawing();
 
+		//set background to the created color
 		ClearBackground(hashColor);
 
 
