@@ -8,6 +8,8 @@
 
 1. Object Information
 
+   -generates a random id number consistly based on input
+
     **File**: HashFunction.h
 
         Description: generates a random id number consistly based on input
